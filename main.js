@@ -4,8 +4,10 @@ import { renderLandingPage } from "./landingPage.js";
 import { renderForm } from "./surveyForm.js";
 
 
+
 renderHeader()
 renderLandingPage() 
+
 
 
 

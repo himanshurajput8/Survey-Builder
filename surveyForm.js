@@ -7,6 +7,7 @@ export function renderForm(){
            <div class="survey-title"><input type="text" placeholder="Enter Survey Title" id="survey-title"></div>
            <button id="add-question">Add Question</button>
            <button id= "save-survey-data-btn">save</button>
+           <button id ="preview">Preview</button>
         </div>    
      
     </div>`
@@ -21,6 +22,9 @@ export function renderForm(){
     });
     document.getElementById('save-survey-data-btn').addEventListener('click', function(){
         saveSurveyData()
+    })
+    document.getElementById('preview').addEventListener('click', function(){
+        renderFormData()
     })
 
 }
@@ -77,10 +81,22 @@ function saveSurveyData(){
     })
      var surveyData = {
             tittle: surveyTitle,
-            question: questions
+            question: questions,
+           
+            
     }
     console.log(surveyData) 
-    localStorage.setItem('surveyData', JSON.stringify(surveyData));     
+    localStorage.setItem('surveyData', JSON.stringify(surveyData));      
 
 } 
  
+export function renderFormData(){
+    const surveyData = JSON.parse(localStorage.getItem('surveyData'));
+    const formDataTemplate = `
+    <div class="form-data-result-container">  
+
+        <h1>${surveyData.tittle}</h1>
+       
+    </div>`
+    document.getElementById('main-container').innerHTML = formDataTemplate 
+} 

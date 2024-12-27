@@ -10,7 +10,7 @@ export function renderLandingPage(){
             <p> Used by 50 million+ people around the world</p>
         </div>
         <div>
-            <div><img src="image/landing-page-img.png"></div>
+            <div><img src="/landing-page-img.png"></div>
         </div>
     </div>`
     document.getElementById('main-container').innerHTML += landingPageTemlates 
