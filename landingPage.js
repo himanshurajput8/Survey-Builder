@@ -7,7 +7,7 @@ export function renderLandingPage(){
 
             <button id="create-form">Create a Survey</button>
             <button>Existing servey</button>
-            <p> Used by 50 million+ people around the world...</p>
+            <p> Used by 50 million+ people around the world</p>
         </div>
         <div>
             <div><img src="/landing-page-img.png"></div>
