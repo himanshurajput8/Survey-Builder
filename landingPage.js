@@ -3,7 +3,7 @@ export function renderLandingPage(){
     <div class= "landing-container">
         <div class="inner-div">
             <h1>Free Online Survey</h1>
-            <p> This is a versatile tool designed to streamline the creation, distribution,<br> and analysis of surveys. It empowers users to easily design custom surveys <br> with a user-friendly interface, </p>
+            <p>This is a versatile tool designed to streamline the creation, distribution,<br> and analysis of surveys. It empowers users to easily design custom surveys <br> with a user-friendly interface, </p>
 
             <button id="create-form">Create a Survey</button>
             <button>Existing servey</button>
